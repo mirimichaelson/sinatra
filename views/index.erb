@@ -1,11 +1,7 @@
 <% if @name %>
 <h1> My name is <%= @name %> </h1>
 <% else %>
-<form action="/named-cat">
-    <label for="name">Name:</label>
-    <input type="text" name="name">
-    <button type="submit">Submit your cat name :)</button>
-</form>
+<%= erb(:cat_form) %>
 <h1> My name is unknown, I am a stray! </h1>
 <% end %>
 <div style='border: 3px dashed red'>
