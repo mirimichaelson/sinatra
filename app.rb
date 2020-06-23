@@ -13,9 +13,14 @@ get '/one' do
   'one'
 end
 
-get '/cat' do
+get '/random-cat' do
+  @name = ["Jameson", "Reginald", "Ada"].sample
   erb(:index)
 end
 
-##Methods
-@@name = ["Amigo", "Donald", "Viking"].sample
+get '/named-cat' do
+  p params[:name]
+  p params[:age].to_i
+  @name = params[:name]
+  erb(:index)
+end
