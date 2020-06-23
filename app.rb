@@ -16,3 +16,6 @@ end
 get '/cat' do
   erb(:index)
 end
+
+##Methods
+@@name = ["Amigo", "Donald", "Viking"].sample
