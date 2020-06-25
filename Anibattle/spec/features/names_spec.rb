@@ -6,4 +6,4 @@ feature 'Providing player names' do
     click_on 'Submit'
     expect(page).to have_text "India" && "Miri"
   end
-end
+end 
