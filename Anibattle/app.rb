@@ -20,5 +20,11 @@ enable :sessions
     erb :play
   end
 
+  get '/attack' do
+    @giraffe_name = session[:giraffe_name]
+    @capybara_name = session[:capybara_name]
+    erb :attack
+  end
+
   run! if app_file == $0
 end
